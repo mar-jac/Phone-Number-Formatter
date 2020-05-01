@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - USA Phone Number Input</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="body" ng-app="myApp">
+    <div class="wrapper" ng-controller="MyCtrl">
+        <div class="info">Raw Value: {{phoneVal}}</div>
+        <div class="info">Filtered Value: {{phoneVal | tel}}</div>
+
+        <input class="input-phone" type='text' phone-input ng-model="phoneVal"/>
+    </div>
+</div>
+<!-- partial -->
+  <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
